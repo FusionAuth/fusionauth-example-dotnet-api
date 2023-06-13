@@ -38,7 +38,7 @@
     document.getElementById("call-api-button").onclick = async function () {
 
         let response = await fetch(
-            "http://localhost:5000/identity",
+            "http://localhost:5000/message",
             {
                 method: 'GET',
                 credentials: "include"
@@ -60,15 +60,15 @@
             // retry the call to the api after refresh:
             console.log("Retrying the call to the API..")
             response = await fetch(
-                "http://localhost:5000/identity",
+                "http://localhost:5000/message",
                 {
                     method: 'GET',
                     credentials: "include"
                 }
             );
         }
-        const claims = await response.json();
-        document.getElementById("api-results").innerHTML = JSON.stringify(claims, null, 4);
+        const message = await response.json();
+        document.getElementById("api-results").innerHTML = JSON.stringify(message, null, 4);
     }
 
 </script>
