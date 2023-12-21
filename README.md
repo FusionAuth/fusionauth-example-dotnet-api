@@ -1,3 +1,5 @@
+**This repo is out of date and is archived. Check out [an updated tutorial on using FusionAuth with .NET Core](https://fusionauth.io/docs/quickstarts/quickstart-dotnet-api) or [the updated GitHub repository](https://github.com/FusionAuth/fusionauth-quickstart-dotnet-api).**
+
 # Integrate Your .NET Core API With FusionAuth Using FusionAuth Hosted Backend
 
 Setup FusionAuth using docker. Follow the setup instructions [here](https://fusionauth.io/docs/v1/tech/tutorials/integrate-dotnet-api)
